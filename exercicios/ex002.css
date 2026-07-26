@@ -1,4 +1,5 @@
 div{
+    display: inline-block;
     background-color: lightgray;
     text-align: center;
     border: 1px solid black;
