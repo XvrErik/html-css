@@ -1,15 +1,22 @@
 body{
-
+    background-image: linear-gradient(to right, cyan, #116a9a);
 }
 table{
     border-collapse: collapse;
+    margin: auto;
+
 }
 thead{
     background-color: #072d3d;
 }
+thead > th{
+    border: 1px solid black;
+
+}
 
 tbody > tr > td{
-    border: 1px solid black; 
+    border: 1px solid black;
+    width: 300px; 
 }
 
 tfoot{
