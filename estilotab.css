@@ -4,14 +4,19 @@ body{
 table{
     border-collapse: collapse;
     margin: auto;
+    position: sticky;
 
 }
 thead{
     background-color: #072d3d;
 }
-thead > th{
+thead > tr > th{
     border: 1px solid black;
 
+}
+thead > tr > th{
+    top: -1px;
+    background-color: darkgray;
 }
 
 tbody > tr > td{
