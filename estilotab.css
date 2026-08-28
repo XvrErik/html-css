@@ -17,11 +17,13 @@ thead > th{
 tbody > tr > td{
     border: 1px solid black;
     width: 300px; 
+    background-color: white;
 }
 
 tfoot{
     border: 1px solid black;
     background-color: #072d3d;
+    text-align: left;
 }
 tbody > tr:nth-child(2n){
     background-color: gray;
