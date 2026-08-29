@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas utilizando colgroup</title>
+    <style>
+        .nome{
+            background-color: #1965df;
+        }
+        .idadeGenero{
+            background-color: cadetblue;
+        }
+        .area{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <colgroup>
+        <col class="nome">
+        <col class="idadeGenero" span="2">
+        <col class="area">
+    </colgroup>
+    <table>
+        <tr>
+            <th>nome</th>
+            <th>idade</th>
+            <th>genero</th>
+            <th>area</th>
+        </tr>
+        <tr>
+            <td>anima</td>
+            <td>14</td>
+            <td>masculino</td>
+            <td>analise e desenvolvimento de sistemas</td>
+        </tr>
+        <tr>
+            <td>ola</td>
+            <td>14</td>
+            <td>feminino</td>
+            <td>front-end</td>
+        </tr>
+        <tr>
+            <td>pleno</td>
+            <td>19</td>
+            <td>masculino</td>
+            <td>ciancia da computacao</td>
+        </tr>
+    </table>
+</body>
+</html>
