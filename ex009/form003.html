@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <form action="cadastro.php" method="" autocomplete="on">
+        <fieldset>
+            <legend>login basico</legend>
+            <p>
+               <label for="inome">nome:</label>
+               <input type="text" name="nome" id="inome" required placeholder="nome" minlength="5">
+            </p>
+            <p>
+                <label for="itel">telefone:</label>
+                <input type="tel" name="tel" id="itel"
+                 placeholder="(xx)xxxx-xxxx" >
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>oque voce prefere</legend>
+            <p>
+                <label for="ijogo">jogar</label>
+                <input type="checkbox" name="jogar" id="ijogo" ><br>
+                <label for="idesenho">desenhar</label>
+                <input type="checkbox" name="desenho" id="idesenho"><br>
+                <label for="iassistir">assistir</label>
+                <input type="checkbox" name="assistir" id="iassistir"><br>
+                <label for="iprogramar">programar</label>
+                <input type="checkbox" name="programar" id="iprogramar">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>meta de passos</legend>
+            <p>
+                <label for="imeta1">5000</label>
+                <input type="radio" name="meta" id="imeta1" value="m1" ><br>
+                <label for="imeta2">2000</label>
+                <input type="radio" name="meta" id="imeta2" value="m2">
+            </p>
+        </fieldset>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </form>
+</body>
+</html>
