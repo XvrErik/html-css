@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>aprendendo formularios</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iano">ano de nascimento:</label>
+            <input type="date" name="ano" id="iano" required
+            max="2026-09-06" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">idade:</label>
+            <output name="idade" id="iidade">0</output>
+        </p>
+        <p>
+            <label for="inovo">novo comando que aprendi:</label>
+            <input type="range" name="vol" id="ivol">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+        <script>
+            function calcIdade(){
+                const nascimento = new Date(document.getElementById('iano').value)
+                const hoje = new Date()
+                let idade = hoje.getFullYear() - nascimento.getFullYear()
+                const fezAniversario =
+                    hoje.getMonth() > nascimento.getMonth() ||
+                    (hoje.getMonth() === nascimento.getMonth() &&
+                        hoje.getDate() >= nascimento.getDate())
+
+                if (!fezAniversario) {
+                    idade--
+                }
+
+                document.getElementById('iidade').textContent = idade
+            }
+        </script>
+    </form>
+</body>
+</html>
