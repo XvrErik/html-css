@@ -9,7 +9,22 @@
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome">nome:</label><input type="text" name="nome" 
-            id="inome" placeholder="nomecompleto" required>
+            id="inome" placeholder="nomecompleto" required autocomplete="name" minlength="5" maxlength="30">
+        </p>
+        <p>
+            <label for="inota">nota:</label><input type="number" name="nota" 
+            id="inota" required step="0.5" placeholder="nota" min="3" max="10">
+        </p>
+        <p>
+            <label for="imes">mes:</label><input type="month" name="mes" id="imes" required placeholder="mes">
+        </p>
+        <p>
+            <label for="itempo">horario:</label><input type="time" name="tempo" id="itempo" required>
+        </p>
+            <label for="idia">dia:</label><input type="date" name="dia" id="idia" required>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
         </p>
         <!--amanha continuar e colocar para numeros/nota, dias, mes tempo, mes, e os 
         botes de enviar e o de reset -->
