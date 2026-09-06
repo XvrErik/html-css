@@ -6,3 +6,6 @@ body{
     background-repeat: no-repeat;
     min-height: 86.7vh;
 }
+h1{
+    display: none;
+}
