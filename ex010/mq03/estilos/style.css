@@ -10,6 +10,7 @@ html{
     background-image: url('../imagens/back-phone.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 h1{
     font-size: 2em;
