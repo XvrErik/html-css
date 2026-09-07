@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*estilos*/
+*{
+    font-family:Arial, Helvetica, sans-serif
+}
+body,html{
+    background-color: antiquewhite;
+}
+main{
+    background-color: white;
+    width: 400px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 18px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.65);
+}
+header{
+    background-color: darkgray;
+    margin: -20px -8px 5px -8px;
+    padding: 5px;
+    height: 170px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.497)
+}
+menu > ul > li{
+    background-color: rgb(67, 65, 65);
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin: 60px 10px 0px -10px;
+}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.814);
+}
