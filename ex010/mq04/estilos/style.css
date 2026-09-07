@@ -12,6 +12,9 @@ i#menu{
     padding: 10px;
     margin: 0px -5px -12px -50px;
 }
+i#menu:hover{
+    background-color: lightgray;
+}
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -37,7 +40,7 @@ header{
     background-color: darkgray;
     margin: -20px -8px 5px -8px;
     padding: 5px;
-    height: 230px;
+    height: auto;
     border: 1px solid black;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.497)
 }
@@ -48,7 +51,7 @@ a{
 menu > ul > li{
     list-style-type: none;
     background-color: rgb(67, 65, 65);
-    display: block;
+    display: none;
     height: 30px;
     border-top: 1px solid black;
     text-align: center;
