@@ -12,7 +12,7 @@
     <header>
         <h1>aprendendo media queries</h1>
         <menu id="imenu">
-            <i id="menu" class="material-symbols-outlined">menu</i>
+            <i id="iconemenu" class="material-symbols-outlined">menu</i>
             <ul>
                 <li><a href="#">opcao 1</a></li>
                 <li><a href="#">opcao 2</a></li>
@@ -21,7 +21,16 @@
                 <li><a href="#">opcao 5</a></li>
             </ul>
         </menu>
-        <script src="escripts/menu.js"></script>
+        <style>
+            const menu = document.querySelector("menu#imenu")
+const btn = document.querySelector("i#iconemenu")
+
+btn.addEventListener("click", mostrar())
+
+function mostrar(){
+    menu.style.display = "block"
+}
+        </style>
     </header>
     <main>
         <article>
